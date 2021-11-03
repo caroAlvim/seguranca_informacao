@@ -2,8 +2,11 @@ import random
 
 from Email import enviamsg
 
-# importar o pyrebase4 no pip
 import pyrebase
+
+from RegistroAcesso import registrar_acesso
+
+from datetime import datetime
 
 def autenticausuario (destino_email,password):
     firebaseConfig = {
@@ -12,9 +15,9 @@ def autenticausuario (destino_email,password):
         "projectId": "fir-pucpr-fdxxx",
         "databaseURL": "https://" + "fir-pucpr-fdxxx" + ".firebaseio.com",
         "storageBucket": "fir-pucpr-fdxxx.appspot.com",
-        "messagingSenderId": "538814xxxxxx",
+        "messagingSenderId": "5388142xxxxx",
         "appId": "1:538814266312:web:e089134784b3a414xxxxxx",
-        "measurementId": "G-QX7Hxxxxxx"
+        "measurementId": "G-QX7HXxxxxx"
     }
 
     firebase = pyrebase.initialize_app(firebaseConfig)
@@ -33,7 +36,7 @@ def autenticausuario (destino_email,password):
 
     codigoativacao = random.randrange(1, 1000000)
 
-    print("Código Aleatório", codigoativacao)
+    # print("Código Aleatório", codigoativacao)
 
     enviamsg(codigoativacao, destino_email)
 
@@ -48,7 +51,8 @@ def autenticausuario (destino_email,password):
         if float(codigoverificacao) == float(codigoativacao):
 
             print("Usuário verificado e autenticado !\n")
+            data_e_hora_atuais = datetime.now()
+            registrar_acesso(destino_email, data_e_hora_atuais)
 
         else:
             print("Usuário não autenticado.\n")
-
