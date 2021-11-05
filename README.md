@@ -3,7 +3,7 @@
 Atividade desenvolvida para explorar os fundamentos dos mecanismos de autenticação. Para isso é elaborado um código em python para experimentar diferentes técnicas de autenticação multifator.
 
 ### O desafio:
-"Para que você compreenda a importância de combinar diferentes técnicas de autenticação reduzindo a probabilidade de o sistema ser comprometido, você será desafiado a implementar uma autenticação multifator para o banco de Tóquio. Nesta atividade, será implementado uma autenticação de dois fatores em Python, adicionando mais um nível de segurança no processo de autenticação do banco".
+"Para que você compreenda a importância de combinar diferentes técnicas de autenticação reduzindo a probabilidade de o sistema ser comprometido, você será desafiado a implementar uma autenticação multifator para um banco. Nesta atividade, será implementado uma autenticação de dois fatores em Python, adicionando mais um nível de segurança no processo de autenticação do banco".
 
 ### Descrição da atividade: 
 
