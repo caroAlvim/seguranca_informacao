@@ -13,13 +13,14 @@ Esta atividade deverá ser realizada em três etapas, as quais são:
 - Implementar uma autenticação multifator para um banco. 
 
 ### Realizados até o momento:
-- conexão com a plataforma Firebase;
-- cadastro de novo usuário e senha;
-- após cadastro do novo usuário, retornar token para autenticação e mensagem de sucesso no caastro;
-- autenticar usuário já cadastrado;
-- enviar código de segurança para email de usuário cadastrado;
-- verificar código de segurança para liberar acesso ao sistema;
-- retornar token de autenticação ao usuário logado;
+- Conexão com a plataforma Firebase;
+- Cadastro de novo usuário e senha;
+- Após cadastro do novo usuário, retornar token para autenticação e mensagem de sucesso no cadastro;
+- Verificar se usuário já possui cadastro;
+- Autenticar usuário já cadastrado;
+- Enviar código de segurança para email de usuário cadastrado;
+- Verificar código de segurança para liberar acesso ao sistema;
+- Retornar token de autenticação ao usuário logado;
 
 
 ## Tecnologias utilizadas
